@@ -1,0 +1,78 @@
+/**===============================================
+                      Properies
+*==============================================**/
+@mixin mid-pg-props {
+  position: absolute;
+  margin:auto;
+  top:0;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+
+@mixin typing{
+  display: inline-block;
+  width: 100%;
+  white-space:nowrap;
+  overflow:hidden;
+  -webkit-animation: type 3s steps(50, end) alternate;
+  animation: type 3s steps(50, end) alternate;
+  @keyframes type{
+      from { width: 0; }
+  }
+  @-webkit-keyframes type{
+      from { width: 0;  }
+  }
+}
+
+/**===============================================
+                    Attributes
+*==============================================**/
+.home-contents{
+  @include mid-pg-props;
+  @include typing;
+  width: 50%;
+  height:30%;
+  text-align:center;
+
+  h1{
+    font-size: 100px;
+    padding-bottom: 0;
+
+    @media screen and (max-width: 414px){
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 768px){
+      font-size: 70px;
+    }
+
+    @media screen and (min-width: 1025px){
+      font-size: 100px;
+    }
+  }
+
+  h3{
+    font-size: 30px;
+
+    @media screen and (max-width: 414px){
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 768px){
+      font-size: 30px;
+    }
+
+    @media screen and (min-width: 1025px){
+      font-size: 40px;
+    }
+  }
+
+  @media screen and (max-width: 414px){
+    width: 70%;
+  }
+}
+
+
+
+
