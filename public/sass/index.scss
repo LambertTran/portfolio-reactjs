@@ -1,6 +1,12 @@
 /**===============================================
                       Properies
 *==============================================**/
+$main-bg: #3AAFA9;
+$home-h1: #FEFFFF;
+$home-h3: #17252A;
+$project-h1: #17252A;
+$project-h3: #DEF2F1;
+
 @mixin mid-pg-props {
   position: absolute;
   margin:auto;
@@ -28,6 +34,10 @@
 /**===============================================
                     Attributes
 *==============================================**/
+body{
+  background-color:$main-bg;
+}
+
 .home-contents{
   @include mid-pg-props;
   @include typing;
@@ -36,9 +46,9 @@
   text-align:center;
 
   h1{
+    color: $home-h1;
     font-size: 100px;
     padding-bottom: 0;
-
     @media screen and (max-width: 414px){
       font-size: 20px;
     }
@@ -54,7 +64,7 @@
 
   h3{
     font-size: 30px;
-
+    color: $home-h3;
     @media screen and (max-width: 414px){
       font-size: 20px;
     }
@@ -73,6 +83,40 @@
   }
 }
 
+/** project style **/
+hr{
+  margin-top:0rem;
+}
+ul{
+  list-style-type: circle;
+}
+.container{
+  h1{
+    color:$project-h1;
+  }
+  h3{
+    color:$project-h3;
+  }
+  p{
+    font-size:15.5px;
+  }
+}
 
+.btn{
+  margin-left:10px;
+}
+
+
+.carousel{
+  margin-bottom: 20px;
+}
+
+// image of slide-show
+.img-con{
+  max-height:500px;
+  @media screen and (max-width: 414px){
+      max-height: 300px;
+  }
+}
 
 
