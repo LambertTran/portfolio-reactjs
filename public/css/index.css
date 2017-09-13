@@ -20,7 +20,7 @@ body {
   overflow: hidden;
   -webkit-animation: type 3s steps(50, end) alternate;
   animation: type 3s steps(50, end) alternate;
-  width: 50%;
+  width: 60%;
   height: 30%;
   text-align: center; }
 @keyframes type {
@@ -35,8 +35,8 @@ body {
     padding-bottom: 0; }
     @media screen and (max-width: 414px) {
       .home-contents h1 {
-        font-size: 20px; } }
-    @media screen and (max-width: 768px) {
+        font-size: 40px; } }
+    @media screen and (min-width: 415px) {
       .home-contents h1 {
         font-size: 70px; } }
     @media screen and (min-width: 1025px) {
@@ -48,12 +48,12 @@ body {
     @media screen and (max-width: 414px) {
       .home-contents h3 {
         font-size: 20px; } }
-    @media screen and (max-width: 768px) {
+    @media screen and (min-width: 415px) {
       .home-contents h3 {
         font-size: 30px; } }
     @media screen and (min-width: 1025px) {
       .home-contents h3 {
-        font-size: 40px; } }
+        font-size: 60px; } }
   @media screen and (max-width: 414px) {
     .home-contents {
       width: 70%; } }
@@ -64,6 +64,22 @@ hr {
 
 ul {
   list-style-type: circle; }
+
+.box {
+  margin-bottom: 10px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+  .box:hover {
+    -webkit-box-shadow: 2px 18px 56px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 18px 56px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 18px 56px 0px rgba(0, 0, 0, 0.75);
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px); }
+
+.row {
+  margin-top: 10px; }
 
 .container h1 {
   color: #17252A; }

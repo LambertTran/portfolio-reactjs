@@ -3,10 +3,10 @@ import NavBar from '../share/navbar';
 import ProjectItem from './project-item';
 
 /** images **/
-import project1 from './images/screen.png';
+import todo from './images/todo.png';
 import wikisearch from './images/wiki-search.png';
 import markdown from './images/markdown.png';
-
+import youtubeplayer from './images/youtube-player.png';
 
 class ProjectPage extends Component{
   render(){
@@ -16,11 +16,10 @@ class ProjectPage extends Component{
         <NavBar />
         <div className="container">
           <div className="row">
-            <ProjectItem img={wikisearch} path="/projects/wikisearch" name='wiki' />
-            <ProjectItem img={markdown} path="/projects/mardownpreview" name='markdown' />
-            <ProjectItem img={project1} path="/" />
-            <ProjectItem img={project1} path="/" />
-            <ProjectItem img={project1} path="/" />
+            <ProjectItem img={todo} path="/projects/todoapp" />
+            <ProjectItem img={youtubeplayer} path="/projects/youtubeplayer" />
+            <ProjectItem img={markdown} path="/projects/mardownpreview"/>
+            <ProjectItem img={wikisearch} path="/projects/wikisearch"/>
           </div>
         </div>
       </div>

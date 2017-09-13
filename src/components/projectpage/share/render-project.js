@@ -3,7 +3,27 @@ import NavBar from '../../share/navbar';
 import SlideShowImage from './slide-show-images';
 
 class RenderProject extends Component{
+
+  renderButton(webLink,codeLink){
+    if(codeLink.length > 1 ){
+      return (
+        <div>
+          <a href={webLink} className="btn btn-primary" role="button">View Page</a>
+          <a href={codeLink[0]} className="btn btn-primary" role="button">View Client Code</a>
+          <a href={codeLink[1]} className="btn btn-primary" role="button">View Server Code</a>
+        </div>
+      )
+    }
+    return (
+      <div>
+        <a href={webLink} className="btn btn-primary" role="button">View Page</a>
+        <a href={codeLink} className="btn btn-primary" role="button">View Code</a>
+      </div>
+    )
+  }
+
   render(){
+    var title   = this.props.title;
     var webLink = this.props.webLink;
     var codeLink= this.props.codeLink;
     var imgList = this.props.imgList;
@@ -13,11 +33,8 @@ class RenderProject extends Component{
       <div>
         <NavBar />
           <div className="container">
-            <h1>Wiki Search Engine</h1><hr/>
-            <div>
-              <a href={webLink} className="btn btn-primary" role="button">View Page</a>
-              <a href={codeLink} className="btn btn-primary" role="button">View Code</a>
-            </div><hr/>
+            <h1>{title}</h1><hr/>
+            {this.renderButton(webLink,codeLink)}<hr/>
             <SlideShowImage images={imgList} />
             <div>
               <h3>About this project</h3><hr/>
