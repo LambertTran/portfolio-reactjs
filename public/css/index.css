@@ -100,4 +100,39 @@ ul {
     .img-con {
       max-height: 300px; } }
 
+/** social icon */
+.home-icon-container {
+  margin: auto; }
+  .home-icon-container ul {
+    white-space: nowrap; }
+    .home-icon-container ul li {
+      border-radius: 40%;
+      float: left;
+      text-align: center;
+      width: 50px;
+      height: 60px;
+      background-color: #000;
+      margin: 10px;
+      list-style: none;
+      font-size: 30px;
+      transition: 0.5s; }
+      .home-icon-container ul li:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5); }
+      .home-icon-container ul li a {
+        width: 10%;
+        display: block;
+        padding: 10px;
+        color: #fff; }
+
+/* set color for social icon */
+ul.home-icon li:nth-child(1) {
+  background-color: #3b5998; }
+
+ul.home-icon li:nth-child(2) {
+  background-color: #bd2c00; }
+
+ul.home-icon li:nth-child(3) {
+  background-color: #3b5998; }
+
 /*# sourceMappingURL=index.css.map */

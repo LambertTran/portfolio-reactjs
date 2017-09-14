@@ -1,11 +1,13 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-
+import logo from './images/logo.png';
 export default function NavBar(){
   return(
     <div className="container">
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a className="navbar-brand" href="#"> Brand  </a>
+      <a className="navbar-brand" href="/">  
+        <img src={logo} width="50" height="50" alt=""/>
+      </a>
 
       <button className="navbar-toggler" type="button" data-toggle="collapse" 
         data-target="#navbarSupportedContent" 
@@ -23,7 +25,7 @@ export default function NavBar(){
             <Link to='/projects' className="nav-link"> Projects </Link>
           </li>
           <li className="nav-item">
-            <Link to='/#' className="nav-link"> About </Link>
+            <Link to='/about' className="nav-link"> About </Link>
           </li>
         </ul>
       </div>

@@ -7,6 +7,17 @@ $home-h3: #17252A;
 $project-h1: #17252A;
 $project-h3: #DEF2F1;
 
+$fb-bg:#3b5998;
+$github-bg:#bd2c00;
+$linkedin-bg:#3b5998;
+
+@mixin hover-eff{
+  &:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5)
+  } 
+}
+
 @mixin mid-pg-props {
   position: absolute;
   margin:auto;
@@ -137,6 +148,48 @@ ul{
   @media screen and (max-width: 414px){
       max-height: 300px;
   }
+}
+
+
+/** social icon */
+.home-icon-container{
+  margin: auto;
+  
+  ul{
+    white-space:nowrap;
+    li {
+      border-radius: 40%;
+      float:left;
+      text-align:center;
+      @include hover-eff;
+      width:50px;
+      height:60px;
+      background-color: #000;
+      margin: 10px;
+      list-style: none;
+      font-size: 30px;
+      transition:0.5s;
+
+      a {
+        width: 10%;
+        display: block;
+        padding: 10px;
+        color: #fff;
+      }
+    }
+  } 
+}
+
+
+/* set color for social icon */
+ul.home-icon li:nth-child(1){
+  background-color: $fb-bg;
+}
+ul.home-icon li:nth-child(2){
+  background-color: $github-bg;
+}
+ul.home-icon li:nth-child(3){
+  background-color: $linkedin-bg;
 }
 
 
