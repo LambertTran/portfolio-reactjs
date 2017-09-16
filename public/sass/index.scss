@@ -58,7 +58,14 @@ section{
   top:95px;
 }
 
+#particles-js{
+  display:block;
+  height:98vh;
+  width:100vw;
+    vertical-align: bottom;
 
+  background-attachment:fixed;
+}
 
 .home-contents{
   @include mid-pg-props;

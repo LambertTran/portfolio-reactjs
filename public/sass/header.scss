@@ -20,11 +20,11 @@ header{
       float:left;
       height:70px;
       width:70px;
-      max-width:20%;
+      max-width:19%;
       padding: 10px 10px;
     }
     nav{
-      width:80%;
+      width:81%;
       float:right;
       ul{
         list-style:none;
@@ -34,12 +34,10 @@ header{
           margin:0 10px;
           padding-top:25px;
           position:relative;
-
           a{
             color: $nav-content;
             text-decoration:none; // get rid of hightline
             text-transform: uppercase;
-
             &:hover{
               color:yellow;
               &::before{

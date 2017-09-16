@@ -14,10 +14,10 @@ header {
       float: left;
       height: 70px;
       width: 70px;
-      max-width: 20%;
+      max-width: 19%;
       padding: 10px 10px; }
     header .header-container nav {
-      width: 80%;
+      width: 81%;
       float: right; }
       header .header-container nav ul {
         list-style: none;
@@ -94,6 +94,13 @@ body {
 section {
   position: relative;
   top: 95px; }
+
+#particles-js {
+  display: block;
+  height: 98vh;
+  width: 100vw;
+  vertical-align: bottom;
+  background-attachment: fixed; }
 
 .home-contents {
   position: absolute;
