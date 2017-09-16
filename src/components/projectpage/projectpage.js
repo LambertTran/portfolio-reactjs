@@ -14,14 +14,14 @@ class ProjectPage extends Component{
     return(
       <div>
         <NavBar />
-        <div className="container">
+        <section className="container">
           <div className="row">
             <ProjectItem img={todo} path="/projects/todoapp" />
             <ProjectItem img={youtubeplayer} path="/projects/youtubeplayer" />
             <ProjectItem img={markdown} path="/projects/mardownpreview"/>
             <ProjectItem img={wikisearch} path="/projects/wikisearch"/>
           </div>
-        </div>
+        </section>
       </div>
     )
   }  

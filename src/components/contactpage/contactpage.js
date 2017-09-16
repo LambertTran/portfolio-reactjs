@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
 import NavBar from '../share/navbar';
-import AboutPageConTent from './about-page-content';
-class AboutPage extends Component{
+import ContactPageConTent from './contact-page-content';
+class ContactPage extends Component{
   render(){
     return (
       <div>
         <NavBar />
-        <AboutPageConTent />
+        <ContactPageConTent />
       </div>
     )
   }
 }
 
-export default AboutPage;
+export default ContactPage;

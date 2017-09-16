@@ -1,7 +1,10 @@
+@import "header.scss";
+
 /**===============================================
                       Properies
 *==============================================**/
 $main-bg: #3AAFA9;
+
 $home-h1: #FEFFFF;
 $home-h3: #17252A;
 $project-h1: #17252A;
@@ -45,9 +48,17 @@ $linkedin-bg:#3b5998;
 /**===============================================
                     Attributes
 *==============================================**/
+
 body{
   background-color:$main-bg;
 }
+
+section{
+  position:relative;
+  top:95px;
+}
+
+
 
 .home-contents{
   @include mid-pg-props;

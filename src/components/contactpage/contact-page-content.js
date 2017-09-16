@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AboutPageContent(){
+export default function ContactPageContent(){
   return(
     <div className="container">
       <div>

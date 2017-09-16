@@ -1,0 +1,115 @@
+$nav-bg : #2b7A78;
+$nav-content: #DEF2F1;
+$main-bg: #3AAFA9;
+
+header{
+  position: fixed;
+  z-index:100;
+  width:100%;
+  background-color:$main-bg;
+  top:0;
+  .header-container{
+    width:100%;
+    // bring the background color back
+    &::after{
+      content:'';
+      display:table;
+      clear:both;
+    }
+    img{
+      float:left;
+      height:70px;
+      width:70px;
+      max-width:20%;
+      padding: 10px 10px;
+    }
+    nav{
+      width:80%;
+      float:right;
+      ul{
+        list-style:none;
+        width:100%;
+        li{
+          display:inline-block;
+          margin:0 10px;
+          padding-top:25px;
+          position:relative;
+
+          a{
+            color: $nav-content;
+            text-decoration:none; // get rid of hightline
+            text-transform: uppercase;
+
+            &:hover{
+              color:yellow;
+              &::before{
+                width:100%;
+                transition:all ease-in 0.5s
+              }
+            }
+            &::before{
+              content:'';
+              display:block;
+              height:5px;
+              width:0%;
+              position:absolute;
+              background-color:yellow;
+              top:5px;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (min-width:767px){
+      width: 80%;
+      margin: 0 auto;
+      nav{
+        ul{
+          float:right;
+          width:80%;
+          li{
+            margin: 0 15px;
+            a{
+              font-size:20px;
+            }
+          }
+        }
+      }
+    }
+    @media screen and (min-width:1023px){
+      width: 80%;
+      margin: 0 auto;
+      img{
+        margin-left:100px;
+      }
+      nav{
+        width:70%;
+        ul{
+          float:right;
+          width:70%;
+          li{
+            margin: 0 20px;
+          }
+        }
+      }
+    }
+    @media screen and (min-width:1920px){
+      width: 70%;
+      margin: 0 auto;
+      img{
+        margin-left:100px;
+      }
+      nav{
+        width:60%;
+        ul{
+          float:right;
+          width:55%;
+          li{
+            margin: 0 35px;
+          }
+        }
+      }
+    }    
+  }  
+}

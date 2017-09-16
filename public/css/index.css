@@ -1,3 +1,87 @@
+header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background-color: #3AAFA9;
+  top: 0; }
+  header .header-container {
+    width: 100%; }
+    header .header-container::after {
+      content: '';
+      display: table;
+      clear: both; }
+    header .header-container img {
+      float: left;
+      height: 70px;
+      width: 70px;
+      max-width: 20%;
+      padding: 10px 10px; }
+    header .header-container nav {
+      width: 80%;
+      float: right; }
+      header .header-container nav ul {
+        list-style: none;
+        width: 100%; }
+        header .header-container nav ul li {
+          display: inline-block;
+          margin: 0 10px;
+          padding-top: 25px;
+          position: relative; }
+          header .header-container nav ul li a {
+            color: #DEF2F1;
+            text-decoration: none;
+            text-transform: uppercase; }
+            header .header-container nav ul li a:hover {
+              color: yellow; }
+              header .header-container nav ul li a:hover::before {
+                width: 100%;
+                transition: all ease-in 0.5s; }
+            header .header-container nav ul li a::before {
+              content: '';
+              display: block;
+              height: 5px;
+              width: 0%;
+              position: absolute;
+              background-color: yellow;
+              top: 5px; }
+    @media screen and (min-width: 767px) {
+      header .header-container {
+        width: 80%;
+        margin: 0 auto; }
+        header .header-container nav ul {
+          float: right;
+          width: 80%; }
+          header .header-container nav ul li {
+            margin: 0 15px; }
+            header .header-container nav ul li a {
+              font-size: 20px; } }
+    @media screen and (min-width: 1023px) {
+      header .header-container {
+        width: 80%;
+        margin: 0 auto; }
+        header .header-container img {
+          margin-left: 100px; }
+        header .header-container nav {
+          width: 70%; }
+          header .header-container nav ul {
+            float: right;
+            width: 70%; }
+            header .header-container nav ul li {
+              margin: 0 20px; } }
+    @media screen and (min-width: 1920px) {
+      header .header-container {
+        width: 70%;
+        margin: 0 auto; }
+        header .header-container img {
+          margin-left: 100px; }
+        header .header-container nav {
+          width: 60%; }
+          header .header-container nav ul {
+            float: right;
+            width: 55%; }
+            header .header-container nav ul li {
+              margin: 0 35px; } }
+
 /**===============================================
                       Properies
 *==============================================**/
@@ -6,6 +90,10 @@
 *==============================================**/
 body {
   background-color: #3AAFA9; }
+
+section {
+  position: relative;
+  top: 95px; }
 
 .home-contents {
   position: absolute;
