@@ -1,8 +1,9 @@
 import React,{Component} from 'react';
 import 'particles.js/particles';
 /** import components **/
-import NavBar from '../share/navbar';
 import HomeContents from './homepage-contents';
+import HomeButtons from './home-buttons';
+
 const particlesJS = window.particlesJS;
 
 class HomePage extends Component{
@@ -17,8 +18,8 @@ class HomePage extends Component{
     
     return(
       <div id="particles-js">
-        <NavBar />
         <HomeContents />
+        <HomeButtons />
       </div>
     )
   }

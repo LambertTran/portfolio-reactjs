@@ -31,7 +31,7 @@ header{
         width:100%;
         li{
           display:inline-block;
-          margin:0 10px;
+          margin:0 7px;
           padding-top:25px;
           position:relative;
           a{
@@ -76,22 +76,24 @@ header{
       }
     }
     @media screen and (min-width:1023px){
-      width: 80%;
+      width: 90%;
       margin: 0 auto;
       img{
         margin-left:100px;
       }
       nav{
-        width:70%;
+        width:45%;
         ul{
           float:right;
-          width:70%;
+          width:100%;
           li{
             margin: 0 20px;
           }
         }
       }
     }
+
+    
     @media screen and (min-width:1920px){
       width: 70%;
       margin: 0 auto;
@@ -99,7 +101,7 @@ header{
         margin-left:100px;
       }
       nav{
-        width:60%;
+        width:70%;
         ul{
           float:right;
           width:55%;

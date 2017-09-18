@@ -9,8 +9,10 @@ class RenderProject extends Component{
       return (
         <div>
           <a href={webLink} className="btn btn-primary" role="button">View Page</a>
-          <a href={codeLink[0]} className="btn btn-primary" role="button">View Client Code</a>
-          <a href={codeLink[1]} className="btn btn-primary" role="button">View Server Code</a>
+          <div>
+            <a href={codeLink[0]} className="btn btn-primary" role="button">View Client Code</a>
+            <a href={codeLink[1]} className="btn btn-primary" role="button">View Server Code</a>
+          </div>
         </div>
       )
     }

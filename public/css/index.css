@@ -24,7 +24,7 @@ header {
         width: 100%; }
         header .header-container nav ul li {
           display: inline-block;
-          margin: 0 10px;
+          margin: 0 7px;
           padding-top: 25px;
           position: relative; }
           header .header-container nav ul li a {
@@ -57,15 +57,15 @@ header {
               font-size: 20px; } }
     @media screen and (min-width: 1023px) {
       header .header-container {
-        width: 80%;
+        width: 90%;
         margin: 0 auto; }
         header .header-container img {
           margin-left: 100px; }
         header .header-container nav {
-          width: 70%; }
+          width: 45%; }
           header .header-container nav ul {
             float: right;
-            width: 70%; }
+            width: 100%; }
             header .header-container nav ul li {
               margin: 0 20px; } }
     @media screen and (min-width: 1920px) {
@@ -75,7 +75,7 @@ header {
         header .header-container img {
           margin-left: 100px; }
         header .header-container nav {
-          width: 60%; }
+          width: 70%; }
           header .header-container nav ul {
             float: right;
             width: 55%; }
@@ -102,58 +102,107 @@ section {
   vertical-align: bottom;
   background-attachment: fixed; }
 
-.home-contents {
+/*** HomePage ***/
+.home-contents, .contact-contents {
   position: absolute;
   margin: auto;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  display: inline-block;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  -webkit-animation: type 3s steps(50, end) alternate;
-  animation: type 3s steps(50, end) alternate;
   width: 60%;
   height: 30%;
   text-align: center; }
+  .home-contents h1, .contact-contents h1 {
+    color: #FEFFFF;
+    font-size: 100px;
+    padding-bottom: 0; }
+    @media screen and (max-width: 414px) {
+      .home-contents h1, .contact-contents h1 {
+        font-size: 40px; } }
+    @media screen and (min-width: 415px) {
+      .home-contents h1, .contact-contents h1 {
+        font-size: 70px; } }
+    @media screen and (min-width: 1025px) {
+      .home-contents h1, .contact-contents h1 {
+        font-size: 100px; } }
+  .home-contents h3, .contact-contents h3 {
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: type 3s steps(50, end) alternate;
+    animation: type 3s steps(50, end) alternate;
+    font-size: 30px;
+    color: #17252A; }
 @keyframes type {
   from {
     width: 0; } }
 @-webkit-keyframes type {
   from {
     width: 0; } }
-  .home-contents h1 {
-    color: #FEFFFF;
-    font-size: 100px;
-    padding-bottom: 0; }
     @media screen and (max-width: 414px) {
-      .home-contents h1 {
-        font-size: 40px; } }
-    @media screen and (min-width: 415px) {
-      .home-contents h1 {
-        font-size: 70px; } }
-    @media screen and (min-width: 1025px) {
-      .home-contents h1 {
-        font-size: 100px; } }
-  .home-contents h3 {
-    font-size: 30px;
-    color: #17252A; }
-    @media screen and (max-width: 414px) {
-      .home-contents h3 {
+      .home-contents h3, .contact-contents h3 {
         font-size: 20px; } }
     @media screen and (min-width: 415px) {
-      .home-contents h3 {
+      .home-contents h3, .contact-contents h3 {
         font-size: 30px; } }
     @media screen and (min-width: 1025px) {
-      .home-contents h3 {
+      .home-contents h3, .contact-contents h3 {
         font-size: 60px; } }
   @media screen and (max-width: 414px) {
-    .home-contents {
+    .home-contents, .contact-contents {
       width: 70%; } }
 
-/** project style **/
+.home-btn {
+  width: 150px;
+  height: 50px;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 50px;
+  border: 2px solid #fff;
+  transition: all 0.5s;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 20%; }
+  .home-btn a {
+    color: white; }
+    .home-btn a:hover {
+      text-decoration: none; }
+  .home-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s; }
+    .home-btn span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s; }
+  .home-btn:hover {
+    background-color: #2b4251; }
+    .home-btn:hover span {
+      padding-right: 25px; }
+      .home-btn:hover span:after {
+        opacity: 1;
+        right: 0; }
+  @media screen and (min-width: 767px) {
+    .home-btn {
+      font-size: 30px;
+      width: 300px;
+      height: 70px;
+      line-height: 70px; } }
+  @media screen and (min-width: 1300px) {
+    .home-btn {
+      top: 45%; } }
+
+/** Project Page **/
 hr {
   margin-top: 0rem; }
 
@@ -184,7 +233,8 @@ ul {
   font-size: 15.5px; }
 
 .btn {
-  margin-left: 10px; }
+  margin-left: 10px;
+  margin-bottom: 10px; }
 
 .carousel {
   margin-bottom: 20px; }
@@ -195,39 +245,68 @@ ul {
     .img-con {
       max-height: 300px; } }
 
+/*** Contact page ***/
+.contact-contents {
+  margin-top: 35%;
+  width: 100%; }
+  .contact-contents h3 {
+    font-size: 40px;
+    margin-bottom: 30px; }
+    @media screen and (min-width: 767px) {
+      .contact-contents h3 {
+        font-size: 50px; } }
+    @media screen and (min-width: 1023px) {
+      .contact-contents h3 {
+        font-size: 60px; } }
+  .contact-contents h5 {
+    color: white;
+    font-size: 20px; }
+    .contact-contents h5 a {
+      color: white; }
+    @media screen and (min-width: 767px) {
+      .contact-contents h5 {
+        font-size: 25px; } }
+    @media screen and (min-width: 1023px) {
+      .contact-contents h5 {
+        font-size: 30px; } }
+  @media screen and (min-width: 1023px) {
+    .contact-contents {
+      margin-top: 10%; } }
+
 /** social icon */
-.home-icon-container {
-  margin: auto; }
-  .home-icon-container ul {
-    white-space: nowrap; }
-    .home-icon-container ul li {
-      border-radius: 40%;
-      float: left;
+.social-icon-container {
+  width: 100%;
+  margin-top: 30px; }
+  .social-icon-container ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    white-space: nowrap;
+    text-align: center; }
+    .social-icon-container ul li {
+      display: inline-block;
+      border-radius: 50%;
       text-align: center;
       width: 50px;
       height: 60px;
+      margin: 10px 10px 10px 10px;
       background-color: #000;
-      margin: 10px;
       list-style: none;
       font-size: 30px;
       transition: 0.5s; }
-      .home-icon-container ul li:hover {
+      .social-icon-container ul li:hover {
         transform: translateY(-8px);
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5); }
-      .home-icon-container ul li a {
+      .social-icon-container ul li a {
         width: 10%;
         display: block;
         padding: 10px;
         color: #fff; }
-
-/* set color for social icon */
-ul.home-icon li:nth-child(1) {
-  background-color: #3b5998; }
-
-ul.home-icon li:nth-child(2) {
-  background-color: #bd2c00; }
-
-ul.home-icon li:nth-child(3) {
-  background-color: #3b5998; }
+      .social-icon-container ul li:nth-child(1) {
+        background-color: #3b5998; }
+      .social-icon-container ul li:nth-child(2) {
+        background-color: #bd2c00; }
+      .social-icon-container ul li:nth-child(3) {
+        background-color: #3b5998; }
 
 /*# sourceMappingURL=index.css.map */
