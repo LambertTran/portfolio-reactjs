@@ -13,13 +13,16 @@ export default function YoutubePlayer(){
   var codeLink = ["https://github.com/LambertTran/todo-app-react-redux",
                   "https://github.com/LambertTran/node-server-todoApp"];
   var techUse = ['ReactJS','Redux','ExpressJS','NodeJS','MongoDB','HTML5','CSS3'];
-  var about = 'This is a full-stack sing page application. React-redux handles '+
-              'client page, express and nodejs on server-side. '  +
-              'Client side makes CRUD requests to server in multiple routes to' +
-              'log in, create new tasks,... Server then processes all requests '+
-              'and update any new documents to MongoDB database. ' +
-              'In addition, to secure user data, server will verify user with ' +
-              'authenticated token everytime a user signs in.' 
+  var about = 'This is a MERN-stack single page application. React-redux handles' +
+              'client page, Express and Nodejs on server-side.'+
+              '\n\n' +
+              'Client side makes CRUD requests to server to log in, create ' + 
+              'new tasks,...and display user data' +
+              '\n\n' +
+              'Server then processes all requests and updates any new documents ' +
+              'to MongoDB database. In addition, to secure user data, server ' + 
+              'will verify user with authenticated token everytime a user signs in. ' +
+              'Furthermore, user password is also hassed and store in differernt collection' 
   return(
     <RenderProject
       title={title} 

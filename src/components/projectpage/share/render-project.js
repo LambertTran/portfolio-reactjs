@@ -40,7 +40,7 @@ class RenderProject extends Component{
             <SlideShowImage images={imgList} />
             <div>
               <h3>About this project</h3><hr/>
-              <p>{about}</p>
+              <p className="detail">{about}</p>
             </div>
             <div>
               <h3>Techs I used</h3><hr/>

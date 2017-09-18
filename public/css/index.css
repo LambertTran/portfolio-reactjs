@@ -245,6 +245,9 @@ ul {
     .img-con {
       max-height: 300px; } }
 
+.detail {
+  white-space: pre-line; }
+
 /*** Contact page ***/
 .contact-contents {
   margin-top: 35%;
