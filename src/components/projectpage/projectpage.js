@@ -14,7 +14,7 @@ class ProjectPage extends Component{
     return(
       <div>
         <NavBar />
-        <section className="container">
+        <section className="container page-width">
           <div className="row">
             <ProjectItem img={todo} path="/projects/todoapp" />
             <ProjectItem img={youtubeplayer} path="/projects/youtubeplayer" />

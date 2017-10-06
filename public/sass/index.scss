@@ -1,18 +1,30 @@
-@import "header.scss";
+/**===============================================
+                      Colors
+*==============================================**/
+
+/** page color **/
+$main-bg: #3AAFA9;
+$home-h1: #FEFFFF;
+$home-h3: #17252A;
+
+/** nav color **/
+$nav-bg : #2b7A78;
+$nav-content: #DEF2F1;
+$main-bg: #3AAFA9;
+
+/** project page color **/
+$project-h1: #17252A;
+$project-h3: #DEF2F1;
+
+/** contact page color **/
+$fb-bg:#3b5998;
+$github-bg:#bd2c00;
+$linkedin-bg:#3b5998;
+
 
 /**===============================================
                       Properies
 *==============================================**/
-$main-bg: #3AAFA9;
-
-$home-h1: #FEFFFF;
-$home-h3: #17252A;
-$project-h1: #17252A;
-$project-h3: #DEF2F1;
-
-$fb-bg:#3b5998;
-$github-bg:#bd2c00;
-$linkedin-bg:#3b5998;
 @mixin mid-pg-props {
   position: absolute;
   margin:auto;
@@ -51,6 +63,14 @@ $linkedin-bg:#3b5998;
   } 
 }
 
+/**===============================================
+                  Import files
+*==============================================**/
+
+@import "header.scss";
+@import "contact";
+@import "home";
+@import "project";
 
 /**===============================================
                     Attributes
@@ -73,263 +93,60 @@ section{
   background-attachment:fixed;
 }
 
-/*** HomePage ***/
-.home-contents{
-  @include mid-pg-props;
-  width: 60%;
-  height:30%;
-  text-align:center;
-
-  h1{
-    color: $home-h1;
-    font-size: 100px;
-    padding-bottom: 0;
-    @media screen and (max-width: 414px){
-      font-size: 40px;
-    }
-
-    @media screen and (min-width: 415px){
-      font-size: 70px;
-    }
-
-    @media screen and (min-width: 1025px){
-      font-size: 100px;
-    }
-  }
-
-  h3{
-    @include typing;
-    font-size: 30px;
-    color: $home-h3;
-    @media screen and (max-width: 414px){
-      font-size: 20px;
-    }
-
-    @media screen and (min-width: 415px){
-      font-size: 30px;
-    }
-
-    @media screen and (min-width: 1025px){
-      font-size: 60px;
-    }
-  }
-
-  @media screen and (max-width: 414px){
-    width: 70%;
-  }
-}
-
-.home-btn{
-  @include btn-props;
-  @include mid-pg-props;
-  top:20%;
-  a{
-    color:white;
-    &:hover{
-      text-decoration: none;
-    }
-  }
-  span{
-    cursor:pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-    &:after{
-       content: '\00bb';
-      position: absolute;
-      opacity: 0;
-      top: 0;
-      right: -20px;
-      transition: 0.5s;
-    }
-  }
-  &:hover{
-    background-color:#2b4251;
-    span{
-      padding-right:25px;
-      &:after{
-        opacity:1;
-        right:0;
-      }
-    }  
-  } 
-
-  @media screen and (min-width: 767px){
-    font-size:30px;
-    width:300px;
-    height:70px;
-    line-height:70px;
-  }
-  @media screen and (min-width: 1300px ){
-    top:45%;
-  }
-}
-
-/** Project Page **/
-hr{
-  margin-top:0rem;
-}
-ul{
+.work{
+  text-align: center;
   list-style-type: circle;
-}
 
-.box{
-  margin-bottom:10px;
-  padding-top:10px;
-  box-sizing: border-box;
-  -moz-box-sizing:border-box;
-  -webkit-box-sizing: border-box;
-  // .item-content{
-  //   @include mid-pg-props;   
-  //   transition: .5s ease;
-  //   opacity:0;
-  //   text-align:center;
-  //   h5{
-  //     position:absolute;
-  //     top:20%;
-  //     left:20%;
-  //   }
-
-  // }
-  // .button{
-  //   @include btn-props;
-  //   position:absolute;
-  //   bottom:10%;
-  //   cursor:pointer;
-  //   a{
-  //     color:white;
-  //     &:hover{
-  //       text-decoration: none;
-  //     }
-  //   }
-  // }
-  &:hover{
-    -webkit-box-shadow: 2px 18px 56px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 2px 18px 56px 0px rgba(0,0,0,0.75);
-    box-shadow: 2px 18px 56px 0px rgba(0,0,0,0.75);
-    -webkit-transform: translateX(-6px);
-    transform: translateX(-6px);
-    // border: 2px solid #fff;
-    // .item-content{
-    //   opacity:1;
-    // }
-    // img{
-    //   opacity:0;
-    // }
-  }
-}
-
-.row{
-  margin-top:10px;
-}
-
-.container{
-  h1{
-    color:$project-h1;
-  }
   h3{
-    color:$project-h3;
+    color:#17252A;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  li{
+    margin-bottom: 20px;
+    color: #2B7A76;
   }
   p{
+    margin-bottom: 20px;
+    color: darken(#2B7A78,10%);
     font-size:15.5px;
+
+  }
+  hr{
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+  @media screen and (min-width:767px){
+    text-align: left;
+    h3{
+      margin-bottom: 8px;
+    }
+    hr{
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
+  @media screen and (min-width:1023px){
+    padding: 40px;
+    h3{
+      margin-bottom: 8px;
+    }
+  }
+   @media screen and (min-width:1350px){
+    padding: 80px;
+    h3{
+      margin-bottom: 8px;
+    }
   }
 }
 
-.btn{
-  margin-left:10px;
-  margin-bottom:10px;
+.work-hr{
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 
-.carousel{
-  margin-bottom: 20px;
-}
 
-// image of slide-show
-.img-con{
-  max-height:500px;
-  @media screen and (max-width: 414px){
-      max-height: 300px;
-  }
-}
-.detail{
-  white-space:pre-line;
-}
-
-/*** Contact page ***/
-.contact-contents{
-  @extend .home-contents;
-  margin-top:35%;
-  width: 100%;
-  h3{
-    font-size:40px;
-    margin-bottom: 30px;
-    @media screen and (min-width: 767px){
-      font-size:50px;
-    }
-    @media screen and (min-width: 1023px){
-      font-size:60px;
-    }
-  }
-  h5{
-    color:white;
-    font-size:20px;
-    a{
-      color:white;
-    }
-    @media screen and (min-width: 767px){
-      font-size:25px;
-    }
-    @media screen and (min-width: 1023px){
-      font-size:30px;
-    }
-  }
-  @media screen and (min-width: 1023px){
-    margin-top:10%;
-  }
-}
-
-
-/** social icon */
-.social-icon-container{
-  width: 100%;
-  margin-top:30px;
-  ul{
-    margin:0;
-    padding:0;
-    width: 100%;
-    white-space:nowrap;
-    text-align:center;
-    li {
-      @include hover-eff-social-icon;
-      display:inline-block;
-      border-radius: 50%;
-      text-align:center;
-      width:50px;
-      height:60px;
-      margin: 10px 10px 10px 10px;
-      background-color: #000;
-      list-style: none;
-      font-size: 30px;
-      transition:0.5s;
-      a {
-        width: 10%;
-        display: block;
-        padding: 10px;
-        color: #fff;
-      }
-      &:nth-child(1){
-        background-color: $fb-bg;
-      }
-      &:nth-child(2){
-        background-color: $github-bg;
-      }
-      &:nth-child(3){
-        background-color: $linkedin-bg;
-      }
-    }
-  } 
-}
 
 
 

@@ -1,7 +1,4 @@
-$nav-bg : #2b7A78;
-$nav-content: #DEF2F1;
-$main-bg: #3AAFA9;
-
+/*** Nav bar ***/
 header{
   position: fixed;
   z-index:100;
@@ -21,17 +18,20 @@ header{
       height:70px;
       width:70px;
       max-width:19%;
-      padding: 10px 10px;
+      padding: 5px 5px;
     }
     nav{
       width:81%;
       float:right;
       ul{
+        padding: 0;
         list-style:none;
         width:100%;
         li{
+          text-align: center;
           display:inline-block;
-          margin:0 7px;
+          // margin:0 7px;
+          width:33%;
           padding-top:25px;
           position:relative;
           a{
@@ -65,9 +65,9 @@ header{
       nav{
         ul{
           float:right;
-          width:80%;
+          width:100%;
           li{
-            margin: 0 15px;
+            // margin: 0 15px;
             a{
               font-size:20px;
             }
@@ -87,7 +87,6 @@ header{
           float:right;
           width:100%;
           li{
-            margin: 0 20px;
           }
         }
       }
@@ -95,7 +94,7 @@ header{
 
     
     @media screen and (min-width:1920px){
-      width: 70%;
+      width: 80%;
       margin: 0 auto;
       img{
         margin-left:100px;
@@ -106,7 +105,6 @@ header{
           float:right;
           width:55%;
           li{
-            margin: 0 35px;
           }
         }
       }

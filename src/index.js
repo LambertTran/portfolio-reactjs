@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter,Route,Switch} from 'react-router-dom';
 
 /** import components **/
+/* main route */
 import HomePage from './components/homepage/homepage';
+import WorkPage from './components/workpage/workpage';
 import ProjectPage from './components/projectpage/projectpage';
 import ContactPage from './components/contactpage/contactpage';
 
+/* sub route */
 import TodoApp from './components/projectpage/projects/todo-app';
 import WikiSearch from './components/projectpage/projects/wiki-search';
 import MarkDownPreview from './components/projectpage/projects/markdown-preview';
@@ -17,6 +20,7 @@ ReactDOM.render(
     <BrowserRouter>
       <div>
         <Switch>
+          <Route path="/work" component={WorkPage} />
           <Route path="/projects/wikisearch" component={WikiSearch} />
           <Route path="/projects/todoapp" component={TodoApp} />
           <Route path="/projects/mardownpreview" component={MarkDownPreview} />

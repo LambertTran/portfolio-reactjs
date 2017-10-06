@@ -1,3 +1,17 @@
+/**===============================================
+                      Colors
+*==============================================**/
+/** page color **/
+/** nav color **/
+/** project page color **/
+/** contact page color **/
+/**===============================================
+                      Properies
+*==============================================**/
+/**===============================================
+                  Import files
+*==============================================**/
+/*** Nav bar ***/
 header {
   position: fixed;
   z-index: 100;
@@ -15,16 +29,18 @@ header {
       height: 70px;
       width: 70px;
       max-width: 19%;
-      padding: 10px 10px; }
+      padding: 5px 5px; }
     header .header-container nav {
       width: 81%;
       float: right; }
       header .header-container nav ul {
+        padding: 0;
         list-style: none;
         width: 100%; }
         header .header-container nav ul li {
+          text-align: center;
           display: inline-block;
-          margin: 0 7px;
+          width: 33%;
           padding-top: 25px;
           position: relative; }
           header .header-container nav ul li a {
@@ -50,11 +66,9 @@ header {
         margin: 0 auto; }
         header .header-container nav ul {
           float: right;
-          width: 80%; }
-          header .header-container nav ul li {
-            margin: 0 15px; }
-            header .header-container nav ul li a {
-              font-size: 20px; } }
+          width: 100%; }
+          header .header-container nav ul li a {
+            font-size: 20px; } }
     @media screen and (min-width: 1023px) {
       header .header-container {
         width: 90%;
@@ -65,12 +79,10 @@ header {
           width: 45%; }
           header .header-container nav ul {
             float: right;
-            width: 100%; }
-            header .header-container nav ul li {
-              margin: 0 20px; } }
+            width: 100%; } }
     @media screen and (min-width: 1920px) {
       header .header-container {
-        width: 70%;
+        width: 80%;
         margin: 0 auto; }
         header .header-container img {
           margin-left: 100px; }
@@ -78,29 +90,71 @@ header {
           width: 70%; }
           header .header-container nav ul {
             float: right;
-            width: 55%; }
-            header .header-container nav ul li {
-              margin: 0 35px; } }
+            width: 55%; } }
 
-/**===============================================
-                      Properies
-*==============================================**/
-/**===============================================
-                    Attributes
-*==============================================**/
-body {
-  background-color: #3AAFA9; }
+/*** Contact page ***/
+.contact-contents {
+  margin-top: 35%;
+  width: 100%; }
+  .contact-contents h3 {
+    font-size: 40px;
+    margin-bottom: 30px; }
+    @media screen and (min-width: 767px) {
+      .contact-contents h3 {
+        font-size: 50px; } }
+    @media screen and (min-width: 1023px) {
+      .contact-contents h3 {
+        font-size: 60px; } }
+  .contact-contents h5 {
+    color: white;
+    font-size: 20px; }
+    .contact-contents h5 a {
+      color: white; }
+    @media screen and (min-width: 767px) {
+      .contact-contents h5 {
+        font-size: 25px; } }
+    @media screen and (min-width: 1023px) {
+      .contact-contents h5 {
+        font-size: 30px; } }
+  @media screen and (min-width: 1023px) {
+    .contact-contents {
+      margin-top: 10%; } }
 
-section {
-  position: relative;
-  top: 95px; }
-
-#particles-js {
-  display: block;
-  height: 98vh;
-  width: 100vw;
-  vertical-align: bottom;
-  background-attachment: fixed; }
+/** social icon */
+.social-icon-container {
+  width: 100%;
+  margin-top: 30px; }
+  .social-icon-container ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    white-space: nowrap;
+    text-align: center; }
+    .social-icon-container ul li {
+      display: inline-block;
+      border-radius: 50%;
+      text-align: center;
+      width: 50px;
+      height: 60px;
+      margin: 10px 10px 10px 10px;
+      background-color: #000;
+      list-style: none;
+      font-size: 30px;
+      transition: 0.5s; }
+      .social-icon-container ul li:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5); }
+      .social-icon-container ul li a {
+        width: 10%;
+        display: block;
+        padding: 10px;
+        color: #fff; }
+      .social-icon-container ul li:nth-child(1) {
+        background-color: #3b5998; }
+      .social-icon-container ul li:nth-child(2) {
+        background-color: #bd2c00; }
+      .social-icon-container ul li:nth-child(3) {
+        background-color: #3b5998; }
 
 /*** HomePage ***/
 .home-contents, .contact-contents {
@@ -203,6 +257,12 @@ section {
       top: 45%; } }
 
 /** Project Page **/
+.page-width {
+  width: 100%; }
+  @media screen and (min-width: 767px) {
+    .page-width {
+      width: 80%; } }
+
 hr {
   margin-top: 0rem; }
 
@@ -248,68 +308,61 @@ ul {
 .detail {
   white-space: pre-line; }
 
-/*** Contact page ***/
-.contact-contents {
-  margin-top: 35%;
-  width: 100%; }
-  .contact-contents h3 {
-    font-size: 40px;
-    margin-bottom: 30px; }
-    @media screen and (min-width: 767px) {
-      .contact-contents h3 {
-        font-size: 50px; } }
-    @media screen and (min-width: 1023px) {
-      .contact-contents h3 {
-        font-size: 60px; } }
-  .contact-contents h5 {
-    color: white;
-    font-size: 20px; }
-    .contact-contents h5 a {
-      color: white; }
-    @media screen and (min-width: 767px) {
-      .contact-contents h5 {
-        font-size: 25px; } }
-    @media screen and (min-width: 1023px) {
-      .contact-contents h5 {
-        font-size: 30px; } }
-  @media screen and (min-width: 1023px) {
-    .contact-contents {
-      margin-top: 10%; } }
+/**===============================================
+                    Attributes
+*==============================================**/
+body {
+  background-color: #3AAFA9; }
 
-/** social icon */
-.social-icon-container {
-  width: 100%;
-  margin-top: 30px; }
-  .social-icon-container ul {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    white-space: nowrap;
-    text-align: center; }
-    .social-icon-container ul li {
-      display: inline-block;
-      border-radius: 50%;
-      text-align: center;
-      width: 50px;
-      height: 60px;
-      margin: 10px 10px 10px 10px;
-      background-color: #000;
-      list-style: none;
-      font-size: 30px;
-      transition: 0.5s; }
-      .social-icon-container ul li:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5); }
-      .social-icon-container ul li a {
-        width: 10%;
-        display: block;
-        padding: 10px;
-        color: #fff; }
-      .social-icon-container ul li:nth-child(1) {
-        background-color: #3b5998; }
-      .social-icon-container ul li:nth-child(2) {
-        background-color: #bd2c00; }
-      .social-icon-container ul li:nth-child(3) {
-        background-color: #3b5998; }
+section {
+  position: relative;
+  top: 95px; }
+
+#particles-js {
+  display: block;
+  height: 98vh;
+  width: 100vw;
+  vertical-align: bottom;
+  background-attachment: fixed; }
+
+.work {
+  text-align: center;
+  list-style-type: circle; }
+  .work h3 {
+    color: #17252A;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .work li {
+    margin-bottom: 20px;
+    color: #2B7A76; }
+  .work p {
+    margin-bottom: 20px;
+    color: #1e5453;
+    font-size: 15.5px; }
+  .work hr {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  @media screen and (min-width: 767px) {
+    .work {
+      text-align: left; }
+      .work h3 {
+        margin-bottom: 8px; }
+      .work hr {
+        margin-top: 50px;
+        margin-bottom: 50px; } }
+  @media screen and (min-width: 1023px) {
+    .work {
+      padding: 40px; }
+      .work h3 {
+        margin-bottom: 8px; } }
+  @media screen and (min-width: 1350px) {
+    .work {
+      padding: 80px; }
+      .work h3 {
+        margin-bottom: 8px; } }
+
+.work-hr {
+  margin-top: 50px;
+  margin-bottom: 50px; }
 
 /*# sourceMappingURL=index.css.map */
