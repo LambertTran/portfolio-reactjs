@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import WebButton from './web-button';
 
 export default class RenderWork extends Component{
   render(){
@@ -19,6 +20,7 @@ export default class RenderWork extends Component{
             <p>{passedData.description} </p>
           </div>
         </div>
+        <WebButton webLink={passedData.webLink} />
         <hr className="work-hr" />
       </div>
     )
