@@ -11,7 +11,7 @@ export default function ContactPageContent(){
       </h5>
       <div className="social-icon-container">
         <ul>
-          <li><a href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.facebook.com/people/Lambert-Tran/100017117864078"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
           <li><a href="https://github.com/LambertTran"><i className="fa fa-github" aria-hidden="true"></i></a></li>
           <li><a href="https://www.linkedin.com/in/lam-tran-26106546/"><i className="fa fa-linkedin" aria-hidden="true"></i></a></li>
         </ul>
