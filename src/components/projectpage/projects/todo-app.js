@@ -16,11 +16,11 @@ export default function YoutubePlayer(){
   var about = 'This is a MERN-stack single page application. React-redux handles' +
               'client page, Express and Nodejs on server-side.'+
               '\n\n' +
-              'Client side makes CRUD requests to server to log in, create ' + 
-              'new tasks,...and display user data' +
+              'Client-side makes CRUD requests to server to log in, create ' + 
+              'new tasks, etc.' +
               '\n\n' +
               'Server then processes all requests and updates any new documents ' +
-              'to MongoDB database. In addition, to secure user data, server ' + 
+              'to MongoDB database. To secure user data, server ' + 
               'will verify user with authenticated token everytime a user signs in. ' +
               'Furthermore, user password is also hassed and store in differernt collection' 
   return(

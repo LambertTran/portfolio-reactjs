@@ -14,9 +14,8 @@ export default function Auto27(){
   var webLink = "https://auto27.us/";
   var codeLink= '';
   var techUse = ['ReactJS','Redux','ExpressJS','NodeJS','AWS','MongoDB','HTML5','Sass'];
-  var about = "Auto 27 is a start up car dealership in Sacramento " +
-              "region. They are the best at helping people get their " +
-              "dream car." + '\n\n' + "This project is built on MERN stack " +
+  var about = "Auto 27 is a start-up car dealership in Sacramento " +
+              "region." + '\n\n' + "This project is built on MERN stack " +
               "NodeJs server handle administration, including login and modify car data. "+
               "All the images are stored in AWS S3 bucket, and the links to these images "+
               " are stored in a Mongo database along with other car descriptions " + "\n\n" +

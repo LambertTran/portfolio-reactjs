@@ -35,7 +35,7 @@ class RenderProject extends Component{
       <div>
         <NavBar />
           <div className="container page-width">
-            <h1>{title}</h1><hr/>
+            <h2>{title}</h2><hr/>
             {this.renderButton(webLink,codeLink)}<hr/>
             <SlideShowImage images={imgList} />
             <div>
