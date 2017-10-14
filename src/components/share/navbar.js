@@ -13,12 +13,12 @@ export default function NavBar(){
           <ul>
             <li>
               <NavLink 
-                to='/work' exact 
+                to='/' exact 
                 activeStyle={{
                   fontWeight: 'bold',
                   color: 'yellow'
                 }}
-              > Work 
+              > Home 
               </NavLink>
             </li>
             <li>

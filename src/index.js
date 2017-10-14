@@ -14,7 +14,7 @@ import TodoApp from './components/projectpage/projects/todo-app';
 import WikiSearch from './components/projectpage/projects/wiki-search';
 import MarkDownPreview from './components/projectpage/projects/markdown-preview';
 import YoutubePlayer from './components/projectpage/projects/youtube-player';
-
+import Auto27 from './components/projectpage/projects/auto27';
 
 ReactDOM.render(
     <BrowserRouter>
@@ -22,6 +22,7 @@ ReactDOM.render(
         <Switch>
           <Route path="/work" component={WorkPage} />
           <Route path="/projects/wikisearch" component={WikiSearch} />
+          <Route path="/projects/auto27" component={Auto27} />
           <Route path="/projects/todoapp" component={TodoApp} />
           <Route path="/projects/mardownpreview" component={MarkDownPreview} />
           <Route path="/projects/youtubeplayer" component={YoutubePlayer} />

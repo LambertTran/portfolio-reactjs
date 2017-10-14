@@ -7,6 +7,7 @@ import todo from './images/todo.png';
 import wikisearch from './images/wiki-search.png';
 import markdown from './images/markdown.png';
 import youtubeplayer from './images/youtube-player.png';
+import auto27 from './images/auto27.png';
 
 class ProjectPage extends Component{
   render(){
@@ -16,6 +17,7 @@ class ProjectPage extends Component{
         <NavBar />
         <section className="container page-width">
           <div className="row">
+            <ProjectItem img={auto27} path="/projects/auto27" />
             <ProjectItem img={todo} path="/projects/todoapp" />
             <ProjectItem img={youtubeplayer} path="/projects/youtubeplayer" />
             <ProjectItem img={markdown} path="/projects/mardownpreview"/>

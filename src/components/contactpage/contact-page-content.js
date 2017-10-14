@@ -1,4 +1,5 @@
 import React from 'react';
+import resume from './Resume-WebDev.pdf';
 
 export default function ContactPageContent(){
   return(
@@ -15,6 +16,9 @@ export default function ContactPageContent(){
           <li><a href="https://github.com/LambertTran"><i className="fa fa-github" aria-hidden="true"></i></a></li>
           <li><a href="https://www.linkedin.com/in/lam-tran-26106546/"><i className="fa fa-linkedin" aria-hidden="true"></i></a></li>
         </ul>
+      </div>
+      <div>
+        <a href={resume}>Resume</a>
       </div>
     </div>
   )

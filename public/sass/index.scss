@@ -63,19 +63,6 @@ $linkedin-bg:#3b5998;
   } 
 }
 
-/**===============================================
-                  Import files
-*==============================================**/
-
-@import "header.scss";
-@import "home";
-@import "project";
-@import "contact";
-
-/**===============================================
-                    Attributes
-*==============================================**/
-
 body{
   background-color:$main-bg;
 }
@@ -92,6 +79,21 @@ section{
   vertical-align: bottom;
   background-attachment:fixed;
 }
+
+
+/**===============================================
+                  Import files
+*==============================================**/
+
+@import "header.scss";
+@import "home";
+@import "project";
+@import "contact";
+
+/**===============================================
+                    Attributes
+*==============================================**/
+
 
 .work{
   text-align: center;
