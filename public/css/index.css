@@ -158,7 +158,7 @@ header {
     .home-contents, .contact-contents {
       width: 70%; } }
 
-.home-btn, .web-btn {
+.home-btn {
   width: 150px;
   height: 50px;
   vertical-align: middle;
@@ -173,37 +173,37 @@ header {
   left: 0;
   right: 0;
   top: 20%; }
-  .home-btn a, .web-btn a {
+  .home-btn a {
     color: white; }
-    .home-btn a:hover, .web-btn a:hover {
+    .home-btn a:hover {
       text-decoration: none; }
-  .home-btn span, .web-btn span {
+  .home-btn span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s; }
-    .home-btn span:after, .web-btn span:after {
+    .home-btn span:after {
       content: '\00bb';
       position: absolute;
       opacity: 0;
       top: 0;
       right: -20px;
       transition: 0.5s; }
-  .home-btn:hover, .web-btn:hover {
+  .home-btn:hover {
     background-color: #2b4251; }
-    .home-btn:hover span, .web-btn:hover span {
+    .home-btn:hover span {
       padding-right: 25px; }
-      .home-btn:hover span:after, .web-btn:hover span:after {
+      .home-btn:hover span:after {
         opacity: 1;
         right: 0; }
   @media screen and (min-width: 767px) {
-    .home-btn, .web-btn {
+    .home-btn {
       font-size: 30px;
       width: 300px;
       height: 70px;
       line-height: 70px; } }
   @media screen and (min-width: 1300px) {
-    .home-btn, .web-btn {
+    .home-btn {
       top: 45%; } }
 
 /** Project Page **/
@@ -262,8 +262,10 @@ ul {
 
 /*** Contact page ***/
 .contact-contents {
-  margin-top: 35%;
-  width: 100%; }
+  margin: 0 auto;
+  margin-top: 25%;
+  width: 100%;
+  height: 100%; }
   .contact-contents h3 {
     font-size: 40px;
     margin-bottom: 30px; }
@@ -288,17 +290,28 @@ ul {
     .contact-contents {
       margin-top: 10%; } }
 
+.contact-item {
+  text-align: center;
+  margin-top: 20px;
+  display: inline-block; }
+  .contact-item i {
+    float: left; }
+  .contact-item h5 {
+    float: left;
+    margin-left: 15px;
+    height: 100%; }
+
 /** social icon */
-.social-icon-container {
+.social-icon-container, .resume {
   width: 100%;
   margin-top: 30px; }
-  .social-icon-container ul {
+  .social-icon-container ul, .resume ul {
     margin: 0;
     padding: 0;
     width: 100%;
     white-space: nowrap;
     text-align: center; }
-    .social-icon-container ul li {
+    .social-icon-container ul li, .resume ul li {
       display: inline-block;
       border-radius: 50%;
       text-align: center;
@@ -309,70 +322,30 @@ ul {
       list-style: none;
       font-size: 30px;
       transition: 0.5s; }
-      .social-icon-container ul li:hover {
+      .social-icon-container ul li:hover, .resume ul li:hover {
         transform: translateY(-8px);
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5); }
-      .social-icon-container ul li a {
-        width: 10%;
+      .social-icon-container ul li a, .resume ul li a {
         display: block;
         padding: 10px;
         color: #fff; }
-      .social-icon-container ul li:nth-child(1) {
+      .social-icon-container ul li:nth-child(1), .resume ul li:nth-child(1) {
         background-color: #3b5998; }
-      .social-icon-container ul li:nth-child(2) {
+      .social-icon-container ul li:nth-child(2), .resume ul li:nth-child(2) {
         background-color: #bd2c00; }
-      .social-icon-container ul li:nth-child(3) {
+      .social-icon-container ul li:nth-child(3), .resume ul li:nth-child(3) {
         background-color: #3b5998; }
+
+.resume {
+  margin-top: 10px; }
+  .resume ul li {
+    border-radius: 15px 50px;
+    width: 140px; }
+    .resume ul li a:hover {
+      text-decoration: none; }
 
 /**===============================================
                     Attributes
 *==============================================**/
-.work {
-  text-align: center;
-  list-style-type: circle; }
-  .work h3 {
-    color: #17252A;
-    margin-top: 20px;
-    margin-bottom: 10px; }
-  .work li {
-    color: #2B7A76;
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 30px; }
-  .work p {
-    margin-bottom: 20px;
-    color: #1e5453;
-    font-size: 15.5px; }
-  .work hr {
-    margin-top: 20px;
-    margin-bottom: 20px; }
-  @media screen and (min-width: 767px) {
-    .work {
-      text-align: left; }
-      .work li {
-        margin: 0;
-        margin-bottom: 30px; }
-      .work h3 {
-        margin-bottom: 8px; }
-      .work hr {
-        margin-top: 50px;
-        margin-bottom: 50px; } }
-  @media screen and (min-width: 1023px) {
-    .work {
-      padding: 40px; }
-      .work h3 {
-        margin-bottom: 8px; } }
-  @media screen and (min-width: 1350px) {
-    .work {
-      padding: 80px; }
-      .work h3 {
-        margin-bottom: 8px; } }
-
-.work-hr {
-  margin-top: 50px;
-  margin-bottom: 50px; }
-
-.web-btn {
-  position: relative; }
 
 /*# sourceMappingURL=index.css.map */

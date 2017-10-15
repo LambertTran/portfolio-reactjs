@@ -15,6 +15,12 @@ class RenderProject extends Component{
           </div>
         </div>
       )
+    } else if (codeLink[0]==='empty'){
+      return(
+        <div>
+          <a href={webLink} className="btn btn-primary" role="button">View Page</a>
+        </div>
+      )
     }
     return (
       <div>

@@ -12,7 +12,7 @@ export default function Auto27(){
   var title = 'Auto27 (in progress)'; 
   var imgList = [auto1,auto2,auto4,auto6];
   var webLink = "https://auto27.us/";
-  var codeLink= '';
+  var codeLink= ['empty'];
   var techUse = ['ReactJS','Redux','ExpressJS','NodeJS','AWS','MongoDB','HTML5','Sass'];
   var about = "Auto 27 is a start-up car dealership in Sacramento " +
               "region." + '\n\n' + "This project is built on MERN stack " +
