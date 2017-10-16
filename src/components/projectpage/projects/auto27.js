@@ -18,7 +18,7 @@ export default function Auto27(){
               "region." + '\n\n' + "This project is built on MERN stack " +
               "NodeJs server handle administration, including login and modify car data. "+
               "All the images are stored in AWS S3 bucket, and the links to these images "+
-              " are stored in a Mongo database along with other car descriptions " + "\n\n" +
+              " are stored in a Mongo database along with other car descriptions." + "\n\n" +
               "The front-end is created using React - Redux framwork. Client site makes " +
               "GET request to server endpoint API to fetch car data and display";
   return(

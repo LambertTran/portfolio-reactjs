@@ -14,7 +14,7 @@ export default function YoutubePlayer(){
                   "https://github.com/LambertTran/node-server-todoApp"];
   var techUse = ['ReactJS','Redux','ExpressJS','NodeJS','MongoDB','HTML5','CSS3'];
   var about = 'This is a MERN-stack single page application. React-redux handles' +
-              'client page, Express and Nodejs on server-side.'+
+              'client-side, Express and Nodejs on server-side.'+
               '\n\n' +
               'Client-side makes CRUD requests to server to log in, create ' + 
               'new tasks, etc.' +
