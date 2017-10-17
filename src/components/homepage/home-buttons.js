@@ -5,7 +5,7 @@ export default function HomeButtons(){
   return (
     <div className="home-btn">
       <Link to="/projects">
-        <span>View my works</span>
+        <span>View my projects</span>
       </Link>      
     </div>
 

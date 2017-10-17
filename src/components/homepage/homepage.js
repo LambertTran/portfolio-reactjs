@@ -19,7 +19,6 @@ class HomePage extends Component{
     return(
       <div id="particles-js">
         <HomeContents />
-        <HomeButtons />
       </div>
     )
   }

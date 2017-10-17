@@ -7,9 +7,7 @@ export default function ContactPageContent(){
       <div>
         <h3>Contact</h3>
       </div>
-      <div>
-        <h5>Feel free to contact me.</h5>
-      </div>
+      
       <div className="contact-item">
         <i className="fa fa-envelope fa-2x" aria-hidden="true"></i>
         <h5> 

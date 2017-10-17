@@ -115,7 +115,7 @@ header {
   left: 0;
   right: 0;
   width: 60%;
-  height: 30%;
+  height: 50%;
   text-align: center; }
   .home-contents h1, .contact-contents h1 {
     color: #FEFFFF;
@@ -166,13 +166,8 @@ header {
   line-height: 50px;
   border: 2px solid #fff;
   transition: all 0.5s;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 20%; }
+  margin: 0 auto;
+  margin-top: 100px; }
   .home-btn a {
     color: white; }
     .home-btn a:hover {
@@ -202,9 +197,6 @@ header {
       width: 300px;
       height: 70px;
       line-height: 70px; } }
-  @media screen and (min-width: 1300px) {
-    .home-btn {
-      top: 45%; } }
 
 /** Project Page **/
 .page-width {

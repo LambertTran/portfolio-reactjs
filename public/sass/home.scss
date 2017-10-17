@@ -2,7 +2,7 @@
 .home-contents{
   @include mid-pg-props;
   width: 60%;
-  height:30%;
+  height:50%;
   text-align:center;
 
   h1{
@@ -46,8 +46,10 @@
 
 .home-btn{
   @include btn-props;
-  @include mid-pg-props;
-  top:20%;
+  // @include mid-pg-props;
+  // top:20%;
+  margin: 0 auto;
+  margin-top:100px;
   a{
     color:white;
     &:hover{
@@ -86,6 +88,6 @@
     line-height:70px;
   }
   @media screen and (min-width: 1300px ){
-    top:45%;
+    // text-outline: ;p:25%;
   }
 }
